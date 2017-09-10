@@ -1,0 +1,16 @@
+{
+    "applications": {
+        "app": {
+            "type": "python",
+            "workers": 2,
+            "path": "/app",
+            "module": "wsgi"
+        }
+    },
+
+    "listeners": {
+        "*:8400": {
+            "application": "app"
+        }
+    }
+}
